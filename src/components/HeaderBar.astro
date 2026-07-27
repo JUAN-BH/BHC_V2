@@ -1,0 +1,62 @@
+---
+
+---
+
+<!-- NAV -->
+<nav>
+  <a href="#about" class="nav-logo">~/dev<em>.Juan Becerra</em></a>
+  <ul class="nav-links">
+    <li><a href="#about"      data-i18n="nav_about">Sobre mí</a></li>
+    <li><a href="#experience" data-i18n="nav_exp">Experiencia</a></li>
+    <li><a href="#projects"   data-i18n="nav_projects">Proyectos</a></li>
+    <li><a href="#stack">Stack</a></li>
+    <li><a href="#learning"   data-i18n="nav_learning">Explorando</a></li>
+  </ul>
+  <div style="display:flex;align-items:center;gap:6px">
+    <button class="lang-toggle" id="langToggle" aria-label="Switch language">
+      <span class="lang-opt" data-lang="es">ES</span>
+      <span class="lang-sep">/</span>
+      <span class="lang-opt" data-lang="en">EN</span>
+    </button>
+    <a href="#contact" class="nav-cta" data-i18n="nav_contact">Contacto</a>
+    <button class="hamburger" id="ham" aria-label="Menú">
+      <span></span><span></span><span></span>
+    </button>
+  </div>
+</nav>
+
+<!-- MOBILE DRAWER OVERLAY -->
+<div class="drawer-overlay" id="drawerOverlay"></div>
+
+<!-- MOBILE DRAWER -->
+<div class="mobile-menu" id="mobileMenu">
+  <div class="drawer-nav">
+    <a href="#about"      class="drawer-link" onclick="closeMenu()">
+      <span class="drawer-link-index">01</span>
+      <span class="drawer-link-label" data-i18n="nav_about">Sobre mí</span>
+    </a>
+    <a href="#experience" class="drawer-link" onclick="closeMenu()">
+      <span class="drawer-link-index">02</span>
+      <span class="drawer-link-label" data-i18n="nav_exp">Experiencia</span>
+    </a>
+    <a href="#projects"   class="drawer-link" onclick="closeMenu()">
+      <span class="drawer-link-index">03</span>
+      <span class="drawer-link-label" data-i18n="nav_projects">Proyectos</span>
+    </a>
+    <a href="#stack"      class="drawer-link" onclick="closeMenu()">
+      <span class="drawer-link-index">04</span>
+      <span class="drawer-link-label">Stack</span>
+    </a>
+    <a href="#learning"   class="drawer-link" onclick="closeMenu()">
+      <span class="drawer-link-index">05</span>
+      <span class="drawer-link-label" data-i18n="nav_learning">Explorando</span>
+    </a>    
+    <a href="#contact"    class="drawer-link" onclick="closeMenu()">
+      <span class="drawer-link-index">06</span>
+      <span class="drawer-link-label" data-i18n="nav_contact">Contacto</span>
+    </a>
+  </div>
+  <div class="drawer-footer">
+    <a href="#contact" class="nav-cta" data-i18n="hero_talk">Hablemos →</a>
+  </div>
+</div>
